@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "title": "Eat Panera with Zack",
+      "completed": false
+    },
+    {
+      "title": "Walk Srcuffy, the dog",
+      "completed": true
+    },
+    {
+      "title": "Study JavaScript",
+      "completed": false
+    },
+    {"title": "Go for a run",
+      "completed": true
+    },
+    {"title": "Cook dinner",
+    "completed": false
+  }
+  ]
+}

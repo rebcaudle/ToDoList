@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.css">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+
+    <style media="screen">
+      h1 {
+        color: #2b2b2b;
+        text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+        font-family: Great Vibes, Helvetica, sans-serif;
+        font-size: 90px
+      }
+      .myBackgroundColor {
+        background-color: #D6FF7E;
+      }
+      li[completed="true"] {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="columns small-12">
+        <h1>Rebecca's ToDos</h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column small-9">
+        <input type="text" id="newTask" placeholder="enter task" onkeypress="addEnter(this,event)"/>
+      </div>
+      <div class="columns small-3">
+        <a class="button" onclick="addTask(newTask.value)">
+          ADD
+        </a>
+      </div>
+    </div>
+
+    <div class="row myBackgroundColor">
+      <div class="columns small-12">
+          <ul id="tasksList">
+          </ul>
+      </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
